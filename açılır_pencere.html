@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 5 örneği</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h3>Popover Example</h3>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="popover"
+        title="açılır pencere başlık"
+        data-bs-content="gerekli bazı bilgiler"
+      >
+        Toggle popover
+      </button>
+      <a
+        href="#"
+        title="Header"
+        data-bs-content="gerekli bazı bilgiler"
+        data-bs-toggle="popover"
+        data-bs-placement="top"
+        data-content="Content"
+        >Top</a
+      >
+      <a
+        href="#"
+        title="Header"
+        data-bs-toggle="popover"
+        data-bs-placement="bottom"
+        data-content="Content"
+        >Bottom</a
+      >
+      <a
+        href="#"
+        title="Header"
+        data-bs-toggle="popover"
+        data-bs-placement="left"
+        data-content="Content"
+        >Left</a
+      >
+      <!-- !basmasakta odak kayboolunca kapanması için 
+        *data-bs-trigger="focus" ekleyoruz 
+      -->
+      <a
+        href="#"
+        title="Header"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-content="Content"
+        data-bs-trigger="focus"
+        >Right</a
+      >
+
+      <!-- !maybolabilen açılır pencere -->
+      <a
+        href="#"
+        title="Header"
+        data-bs-toggle="popover"
+        data-bs-trigger="hover"
+        data-bs-content="Popover text"
+        >Hover over me</a
+      >
+
+      
+    </div>
+
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+  </body>
+</html>
