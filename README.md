@@ -1,2 +1,2 @@
 # bootstrap-turkce-dokuman
-ileride daha görsel bir beni eklenecektir
+ileride daha görsel bir hali eklenecektir
