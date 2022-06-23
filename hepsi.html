@@ -1,1 +1,2648 @@
 <!-- Bismillahirrahmanirrahim -->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Bootstrap 5 örneği</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  
+
+    <div class="container pt-3"><br><br><br>
+        <h1>ekrana göre boyutlanan</h1>
+        <p>Resize the browser window to see the effect.</p>
+      </div>
+      <!-- ? en büyük ekranlara kadar ekranı kaplıyor -->
+      <div class="container-sm border">.container-sm</div>
+      <div class="container-md mt-3 border">.container-md</div>
+      <div class="container-lg mt-3 border">.container-lg</div>
+      <!-- ? büyük ekranlara kadar ekranı kaplıyor -->
+      <div class="container-xl mt-3 border">.container-xl</div>
+      <!-- ? en büyük ekranlara kadar ekranı kaplıyor -->
+      <div class="container-xxl mt-3 border">.container-xxl</div>
+
+      <div class="row bg-primary">
+          <!-- ? yazılan boyuta göre aşağı geçme ayarlanıyor
+          ? örneğin sm seçilirse 540 pxden sonra aşşağı kayıyor
+          -->
+          <div class="col-sm-5 p-3 bg-black text-white">.col</div>
+          <div class="col-sm-4 bg-info">.col</div>
+          <div class="col-sm-3 bg-success">.col</div>
+        </div> 
+
+        <!-- ? mt margin
+        ?h* clslarıyla başlık ayarlamalarımızı yapabiliriz
+        -->
+
+      <div class="container mt-3">
+        <p class="h1">h1 Bootstrap heading</p>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+        <h1 class="display-1">Display 1</h1>
+        <h1>h1 heading <small>secondary </small>text</h1>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <blockquote class="blockquote">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+        </dl> 
+
+        <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+        <pre>
+          Text in a pre element
+          is displayed in a fixed-width
+          font, and it preserves
+          both      spaces and
+          line breaks.
+          </pre>
+
+          <h2>Typography</h2>
+          <p class="text-start">Left-aligned text.</p>
+          <p class="text-end">Right-aligned text.</p>      
+          <p class="text-center">Center-aligned text.</p>
+          <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+
+          <p class="text-lowercase">Lowercased text.</p>
+          <p class="text-uppercase">Uppercased text.</p>      
+          <p class="text-capitalize">Capitalized text.</p>
+
+          <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">Coffee</li>
+            <li class="list-inline-item">Tea</li>
+            <li class="list-inline-item">Milk</li>
+          </ul>
+          
+      </div>
+    
+
+      <!-- *renkler -->
+      <div class="container mt-3">
+        <h2>Contextual Colors</h2>
+        <p>Use the contextual classes to provide "meaning through colors":</p>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-primary">This text is important.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-info">This text represents some information.</p>
+        <p class="text-warning">This text represents a warning.</p>
+        <p class="text-danger">This text represents danger.</p>
+        <p class="text-secondary">Secondary text.</p>
+        <p class="text-dark">This text is dark grey.</p>
+        <p class="text-body">Default body color (often black).</p>
+        <p class="text-light">This text is light grey (on white background).</p>
+        <p class="text-white">This text is white (on white background).</p>
+    <br>  
+        <h2>Opacity Text Colors</h2>
+    <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+    <p class="text-black-50">Black text with 50% opacity on white background</p>
+    <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+  <br>
+    <p>Use the contextual background classes to provide "meaning through colors".</p>
+    <p>Note that you can also add a .text-* class if you want a different text color:</p>
+    <p class="bg-primary text-white">This text is important.</p>
+    <p class="bg-success text-white">This text indicates success.</p>
+    <p class="bg-info text-white">This text represents some information.</p>
+    <p class="bg-warning text-white">This text represents a warning.</p>
+    <p class="bg-danger text-white">This text represents danger.</p>
+    <p class="bg-secondary text-white">Secondary background color.</p>
+    <p class="bg-dark text-white">Dark grey background color.</p>
+    <p class="bg-light text-dark">Light grey background color.</p>
+      </div>
+
+      <!-- *alert -->
+
+    <div class="container mt-3">
+        <h2>Alerts</h2>
+        <p id="bas">Alerts are created with the .alert class, followed by a contextual color classes:</p>
+        <div class="alert alert-success">
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <div class="alert alert-primary">
+          <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary">
+          <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-dark">
+          <strong>Dark!</strong> Dark grey alert.
+        </div>
+        <div class="alert alert-light">
+          <strong>Light!</strong> Light grey alert.
+        </div>
+  <!-- ! linkli uyarı -->
+        <div class="alert alert-success">
+          <strong>Success!</strong> You should <a href="#bas" class="alert-link">read this message</a>.
+        </div>
+        <!-- ! fade show basit bir animasyon ekliyor -->
+        <div class="alert alert-danger alert-dismissible fade show">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+  
+      </div>
+      
+  <!-- *resim -->
+
+  <div class="container mt-3 bg-info">
+    <h2>Rounded Corners</h2>
+    <p>The .rounded class adds rounded corners to an image:</p>            
+    <img src="resimler/dere.png" class="rounded" alt="Cinque Terre" width="304" > 
+  
+    <img src="resimler/dere.png" class="rounded-circle" alt="Cinque Terre" width="304" > 
+    
+    <img src="resimler/dere.png" class="img-thumbnail" alt="Cinque Terre" width="304" > 
+  
+    <img src="resimler/dere.png" class="float-start" width="300">
+    <img src="resimler/menzara.jpg" class="float-end" width="300"> 
+    <!-- ?resmi ortya almak için -->
+    <img src="resimler/elma.png" class="mx-auto d-block" width="200"> 
+  <!-- ?resmi orantılı olarak büyütp kontainerin içine sığdırmak için kullanılır -->
+    <img class="img-fluid" src="resimler/kavun.png" alt="Kavun" width="1100" height="500"> 
+  </div>
+  
+
+  <!-- *tablo -->
+  
+<div class="container mt-3">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+<!-- !özellikleri değişkiren aşşağıdaki klaslar
+  ?table table-striped table-bordered table-hover  -->
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-striped table-dark table-borderless">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Default</td>
+          <td>Defaultson</td>
+          <td>def@somemail.com</td>
+        </tr>      
+        <tr class="table-primary">
+          <td>Primary</td>
+          <td>Joe</td>
+          <td>joe@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-danger">
+          <td>Danger</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr class="table-info">
+          <td>Info</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+        <tr class="table-warning">
+          <td>Warning</td>
+          <td>Refs</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-active">
+          <td>Active</td>
+          <td>Activeson</td>
+          <td>act@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Secondary</td>
+          <td>Secondson</td>
+          <td>sec@example.com</td>
+        </tr>
+        <tr class="table-light">
+          <td>Light</td>
+          <td>Angie</td>
+          <td>angie@example.com</td>
+        </tr>
+        <tr class="table-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Small Table</h2>
+    <p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+    <table class="table table-bordered table-sm">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  <div class="container mt-3">
+    <h2>Responsive Table</h2>
+    <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
+    <!-- ?tablonun küçülmesni cihz boyutuna göre eklme yapabiliyoruz table-responsive -> table-responsive-sm -->
+    <div class="table-responsive-sm">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Sex</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>Pitt</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>USA</td>
+            <td>Female</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- *buton gurupları-->
+  <div class="btn-group p-3">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div> 
+<!-- !büyük boy buton -->
+  <div class="btn-group btn-group-lg">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div> 
+
+  <div class="btn-group-vertical p-3">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div> 
+<!-- !seçeneklibuton -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div> 
+  <!-- *rozetler -->
+
+<div class="container bg-gradient">
+
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6> 
+  
+    <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning">Warning</span>
+  <span class="badge bg-info">Info</span>
+  <span class="badge bg-light">Light</span>
+  <span class="badge bg-dark">Dark</span>
+  <br>
+  <span class="badge rounded-5 bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning">Warning</span>
+  <span class="badge rounded-pill bg-info">Info</span>
+  <span class="badge rounded-pill bg-light">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
+  <br><br>
+  <button type="button" class="btn btn-primary">
+    Messages <span class="badge bg-danger">7</span>
+  </button>
+  </div>
+
+
+  <!-- *ilerleme çubuğu -->
+  <div class="container p-3">
+    <div class="progress">
+      <div class="progress-bar" style="width: 20%"></div>
+    </div>
+    <div class="progress m-4" style="height: 70px">
+      <div class="progress-bar" style="width: 40%; height: 70px">40%</div>
+    </div>
+
+    <!-- Blue -->
+    <div class="progress">
+      <div class="progress-bar" style="width: 10%"></div>
+    </div>
+
+    <!-- Green -->
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 20%"></div>
+    </div>
+
+    <!-- Turquoise -->
+    <div class="progress">
+      <div class="progress-bar bg-info" style="width: 30%"></div>
+    </div>
+
+    <!-- Orange -->
+    <div class="progress">
+      <div class="progress-bar bg-warning" style="width: 40%"></div>
+    </div>
+
+    <!-- Red -->
+    <div class="progress">
+      <div class="progress-bar bg-danger" style="width: 50%"></div>
+    </div>
+
+    <!-- White -->
+    <div class="progress border">
+      <div class="progress-bar bg-white" style="width: 60%"></div>
+    </div>
+
+    <!-- Grey -->
+    <div class="progress">
+      <div class="progress-bar bg-secondary" style="width: 70%"></div>
+    </div>
+
+    <!-- Light Grey -->
+    <div class="progress border">
+      <div class="progress-bar bg-light" style="width: 80%"></div>
+    </div>
+
+    <!-- Dark Grey -->
+    <div class="progress">
+      <div class="progress-bar bg-dark" style="width: 90%"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+    </div> 
+    <br>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:40%"></div>
+    </div>
+    <div class="progress">
+      <!-- !matematik hatasında  tümünü oranlayıp ayarlıyor-->
+      <div class="progress-bar bg-success" style="width:90%">
+        Free Space
+      </div>
+      <div class="progress-bar bg-warning" style="width:10%">
+        Warning
+      </div>
+      <div class="progress-bar bg-danger" style="width:100%">
+        Danger
+      </div>
+    </div> 
+  </div>
+
+
+  <!-- *yükleme imleci -->
+  <div class="container mt-3">
+    <h2>Spinners</h2>
+    <p>
+      To create a spinner/loader, use the <code>.spinner-border</code> class:
+    </p>
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+    <div class="spinner-border text-dark"></div>
+    <div class="spinner-border text-light"></div>
+  </div>
+  <div class="container mt-3">
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-info"></div>
+    <div class="spinner-grow text-warning"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-dark"></div>
+    <div class="spinner-grow text-light"></div>
+  </div>
+  <div class="container mt-3">
+    <div class="spinner-border spinner-border-sm"></div>
+    <div class="spinner-grow spinner-grow-xl"></div>
+  </div>
+
+  <div class="container">
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+    </button>
+    
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+    
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+    
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-grow spinner-grow-sm"></span>
+      Loading..
+    </button>
+  </div>
+
+
+  <!-- *sayfalandırma -->
+  <div class="container ">
+    <ul class="pagination pagination-lg">
+      <li class="page-item  disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul> 
+    <br>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Photos</a></li>
+      <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+      <li class="breadcrumb-item"><a href="#">Italy</a></li>
+      <li class="breadcrumb-item active">Rome</li>
+    </ul> 
+  </div>
+
+<!-- *liste gurupları -->
+
+<div class="container-sm">
+    <!-- !normal liste -->
+    <ul class="list-group">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item  active">Third item</li>
+    </ul><br>
+    <!-- !seçimli liste -->
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">First item</a>
+      <a href="#" class="list-group-item list-group-item-action">Second item</a>
+      <a href="#" class="list-group-item disabled">Third item</a>
+    </div> <br>
+    <!-- !kenarlıksız liste -->
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ul> <br>
+    <!-- !sayılı liste -->
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+    </ol> <br>
+    <!-- !yatay liste -->
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">First item</li>
+      <li class="list-group-item">Second item</li>
+      <li class="list-group-item">Third item</li>
+      <li class="list-group-item">Fourth item</li>
+    </ul> <br>
+    <!-- !renkli listeler -->
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">Success item</li>
+      <li class="list-group-item list-group-item-secondary">Secondary item</li>
+      <li class="list-group-item list-group-item-info">Info item</li>
+      <li class="list-group-item list-group-item-warning">Warning item</li>
+      <li class="list-group-item list-group-item-danger">Danger item</li>
+      <li class="list-group-item list-group-item-primary">Primary item</li>
+      <li class="list-group-item list-group-item-dark">Dark item</li>
+      <li class="list-group-item list-group-item-light">Light item</li>
+    </ul> <br>
+    <!-- !linkli renkli listiler -->
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Action item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+    </div> <br>
+
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Inbox
+        <span class="badge bg-primary rounded-pill">12</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Ads
+        <span class="badge bg-primary rounded-pill">50</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Junk
+        <span class="badge bg-primary rounded-pill">99</span>
+      </li>
+    </ul> <br>
+
+  </div>
+
+
+  <!-- *seçenekli buton -->
+  <div class="container mt-3">
+    <!-- ?start deyince soldan end diyince sağdan açılıyor
+    ?dropup deyince yukarı doğru açılıyor
+    -->
+    <div class="dropdown ">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button .........
+      </button>
+      <!-- ?dropdown-menu-end menünün sağdan tarafa doğru açılmasını sağlıyor -->
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><h5 class="dropdown-header">Dropdown header 1</h5></li> 
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item disabled" href="#">Link 2</a></li>
+        <li><hr class="dropdown-divider"></hr></li> 
+        <li><a class="dropdown-item active" href="#">Link 3</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+        <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+        <li><span class="dropdown-item-text">Just Text</span></li>
+      </ul>
+    </div> <br>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Apple</button>
+      <button type="button" class="btn btn-warning">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tablet</a></li>
+          <li><a class="dropdown-item" href="#">Smartphone</a></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+
+
+  <!-- *açıklamalı buton -->
+
+  <div class="container mt-3">
+    <button data-bs-toggle="collapse" data-bs-target="#demo1">Collapsible</button>
+    <div id="demo1" class="collapse">
+    Lorem ipsum dolor text....
+    </div> 
+
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+    <div id="demo" class="collapse show">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            Collapsible Group Item #1
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus assumenda officia consectetur ullam. Blanditiis, commodi tempora accusantium animi accusamus molestiae deserunt, dolorem at cumque, odio eaque praesentium vero totam!
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Collapsible Group Item #2
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum..
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Collapsible Group Item #3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum..
+          </div>
+        </div>
+      </div>
+    
+      
+    </div> 
+  </div>
+
+  <!-- *gezinti menuleri -->
+
+  <div>
+    <!-- !justify-content-center yön menüsünün konumunu belirliyor 
+        !flex-column yön menüsünün dikey yapar
+        -->
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <!-- ! nav-justified ile tam genişlikte oluyor -->
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-pills p-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+          >Dropdown</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="home">paragraf 1</div>
+      <div class="tab-pane container fade" id="menu1">paragraf 2</div>
+      <div class="tab-pane container fade" id="menu2">paragraf 3</div>
+    </div>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#home1">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu11">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#menu21">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="home1">paragraf 1</div>
+      <div class="tab-pane container fade" id="menu11">paragraf2</div>
+      <div class="tab-pane container fade" id="menu21">paragraf3</div>
+    </div>
+  </div>
+
+  <!-- *gezinti çubuğu -->
+  <div>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  </div>
+  <div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="resimler/kavun.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+        </a>
+      </div>
+    </nav> 
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <span class="navbar-text">Navbar text</span>
+      </div>
+    </nav> 
+
+    <!-- !cihaza göre gezint bölmesini saklar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link</a></li>
+                <li><a class="dropdown-item" href="#">Another link</a></li>
+                <li><a class="dropdown-item" href="#">A third link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- !arama bölmeli -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- !hep üste duran gezinti bölmesi 
+    ?eğer bottop dersek hep altta durur
+    -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fixed top</a>
+      </div>
+    </nav>
+    
+    <div class="container-fluid" style="margin-top:80px">
+      <h3>Top Fixed Navbar</h3>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <h1>Scroll this page to see the effect</h1>
+    </div> 
+  </div>
+  
+
+  <!-- !üste gelince yukarı çıkangezinti bölmesi -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sticky top</a>
+    </div>
+  </nav>
+  <div class="container-fluid mt-3">
+    <br>
+    <h3>Sticky Navbar</h3>
+    <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
+    <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+  </div>
+  
+  
+  
+  <div class="container-fluid"><br>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+  </div>
+  
+
+  <!-- *resim geçici -->
+
+
+    
+  <div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <!-- !carousel-indicators alttaki gezinti noktaları -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="resimler/menzara.jpg" alt="Los Angeles" height="400" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="resimler/dere.png" alt="Chicago" height="400" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="resimler/manav.png" alt="New York" height="400" class="d-block w-100" />
+          <div class="carousel-caption">
+            <h3>mavım manavım</h3>
+            <p class="text-dark">Gel vatandaş gellll</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- *uyarıcı -->
+
+  <div class="container p-2">
+    <!-- Button to Open the Modal -->
+    <button
+      type="button"
+      class="btn btn-info"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      Open modal
+    </button>
+
+    <!-- The Modal -->
+    <!-- !anmasyon eklemek için fade ekliyoruz -->
+    <div class="modal fade " id="myModal">
+      <!-- !boyutu ayarlamak için modal-sm ile ayarlayabiliyoruz 
+      ! tama ektran yapmak için modal-fullscreen kullanıyoruz
+      !modal-dialog-centered ile ortaya alabiliyoruz
+      -->
+      <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">Modal body..
+            <h3>Some text to enable scrolling..</h3>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *butonlar -->
+
+  <div class="container mt-3 p-2">
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <a href="#" class="btn btn-success">Link Button</a>
+    <br /><br />
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+    <br><br>
+    <h1>buton büyüklükleri</h1>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+<br><br>
+<div class="d-grid gap-3">
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+</div>  
+<br><br>
+<h3>buton aktifliği</h3>
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+<a href="#" class="btn btn-primary disabled">Disabled Link</a> 
+<br><br>
+<h3>buton yükleme animasyonu</h3>
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+</button>
+
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Loading..
+</button>
+  </div>
+
+
+  <!-- *uyarılı -->
+  <div class="container mt-3">
+    <h3>Tooltip Example</h3>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">
+      Hover over me!
+    </button>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Hover</a>
+  </div>
+  
+  <script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+  
+<!-- *açılır pencere -->
+<div class="container mt-3">
+    <h3>Popover Example</h3>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="popover"
+      title="açılır pencere başlık"
+      data-bs-content="gerekli bazı bilgiler"
+    >
+      Toggle popover
+    </button>
+    <a
+      href="#"
+      title="Header"
+      data-bs-content="gerekli bazı bilgiler"
+      data-bs-toggle="popover"
+      data-bs-placement="top"
+      data-content="Content"
+      >Top</a
+    >
+    <a
+      href="#"
+      title="Header"
+      data-bs-toggle="popover"
+      data-bs-placement="bottom"
+      data-content="Content"
+      >Bottom</a
+    >
+    <a
+      href="#"
+      title="Header"
+      data-bs-toggle="popover"
+      data-bs-placement="left"
+      data-content="Content"
+      >Left</a
+    >
+    <!-- !basmasakta odak kayboolunca kapanması için 
+      *data-bs-trigger="focus" ekleyoruz 
+    -->
+    <a
+      href="#"
+      title="Header"
+      data-bs-toggle="popover"
+      data-bs-placement="right"
+      data-content="Content"
+      data-bs-trigger="focus"
+      >Right</a
+    >
+
+    <!-- !maybolabilen açılır pencere -->
+    <a
+      href="#"
+      title="Header"
+      data-bs-toggle="popover"
+      data-bs-trigger="hover"
+      data-bs-content="Popover text"
+      >Hover over me</a
+    >
+
+    
+  </div>
+
+  <script>
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  </script>
+
+
+<!-- *kart -->
+
+<div class="container-sm mt-3">
+    <div class="card">
+      <div class="card-body">Basic card</div>
+    </div>
+    <br />
+
+    <div class="card">
+      <div class="card-header">Header</div>
+      <div class="card-body">Content</div>
+      <div class="card-footer">Footer</div>
+    </div><br>
+
+    <h2>Cards with Contextual Classes</h2>
+    <div class="card">
+      <div class="card-body">Basic card</div>
+    </div>
+    <br />
+    <div class="card bg-primary text-white">
+      <div class="card-body">Primary card</div>
+    </div>
+    <br />
+    <div class="card bg-success text-white">
+      <div class="card-body">Success card</div>
+    </div>
+    <br />
+    <div class="card bg-info text-white">
+      <div class="card-body">Info card</div>
+    </div>
+    <br />
+    <div class="card bg-warning text-white">
+      <div class="card-body">Warning card</div>
+    </div>
+    <br />
+    <div class="card bg-danger text-white">
+      <div class="card-body">Danger card</div>
+    </div>
+    <br />
+    <div class="card bg-secondary text-white">
+      <div class="card-body">Secondary card</div>
+    </div>
+    <br />
+    <div class="card bg-dark text-white">
+      <div class="card-body">Dark card</div>
+    </div>
+    <br />
+    <div class="card bg-light text-dark">
+      <div class="card-body">Light card</div>
+    </div><br>
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some example text. Some example text.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div><br>
+
+    <div class="d-flex">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="resimler/elma.png"  alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="resimler/kavun.png" alt="Card image">
+        <div class="card-img-overlay">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *bildirim mesajı -->
+<!-- !direk bildirim için -->
+<div>
+    <div class="toast show">
+      <div class="toast-header">
+        <strong class="me-auto">Toast Header</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>Some text inside the toast body</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- !butonlu bildirim mesajı -->
+  <div class="container mt-3">
+    <h3>Toast Example</h3>
+    <p>In this example, we use a button to show the toast message.</p>
+  
+    <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+    
+    <div class="toast">
+      <div class="toast-header">
+        <strong class="me-auto">Toast Header</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>Some text inside the toast body</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  document.getElementById("toastbtn").onclick = function() {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+  }
+  </script>
+  </div>
+
+  <!-- *haraket edebilen menülü yazı -->
+  <body style="position: relative" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+      <h1>Section 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    
+    <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+      <h1>Section 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    
+    <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+      <h1>Section 3</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    
+    </body>
+
+    <!-- *yan menü -->
+    <div>
+        <!-- !offcanvas-end açılır pencerenin yönünü belrityor -->
+        <div class="offcanvas offcanvas-top" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Heading</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+          </div>
+        </div>
+        
+        <!-- Button to open the offcanvas sidebar -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          Open Offcanvas Sidebar
+        </button>
+      </div>
+
+      <!-- *esnek kutular -->
+      <div class="d-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <br /><br />
+  
+      <div class="d-flex flex-row bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="d-flex flex-row-reverse bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="d-flex flex-column m-3">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="d-flex flex-column-reverse m-3">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="container mt-3">
+        <h2>Justify content</h2>
+        <p>
+          Use the .justify-content-* classes to change the alignment of flex
+          items. Choose from start (default), end, center, between or around:
+        </p>
+        <div class="d-flex justify-content-start bg-secondary mb-3">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end bg-secondary mb-3">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between bg-secondary mb-3">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around bg-secondary mb-3">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+      </div>
+  
+      <div class="d-flex">
+        <div class="p-2 bg-info flex-fill">Flex item 1</div>
+        <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+        <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+      </div>
+  
+      <div class="d-flex mt-2">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning flex-grow-1">Flex item 2</div>
+        <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+      </div>
+  
+      <div class="d-inline-flex bg-secondary">
+        <div class="p-2 bg-info order-3">Flex item 1</div>
+        <div class="p-2 bg-warning order-4">Flex item 2</div>
+        <div class="p-2 bg-primary order-1">Flex item 3</div>
+      </div>
+  
+      <!-- !otomatik margin eklme -->
+      <div class="d-flex bg-secondary">
+        <div class="p-2 ms-auto bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="d-flex bg-secondary">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 me-auto bg-primary">Flex item 3</div>
+      </div>
+  
+      <div class="container mt-3">
+        <h2>Wrap</h2>
+        <p>
+          Control how flex items wrap in a flex container with .flex-nowrap
+          (default), .flex-wrap or .flex-wrap-reverse.
+        </p>
+        <p><code>.flex-wrap:</code></p>
+        <div class="d-flex flex-wrap bg-light">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p><code>.flex-wrap-reverse:</code></p>
+        <div class="d-flex flex-wrap-reverse bg-light">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p><code>.flex-nowrap:</code></p>
+        <div class="d-flex flex-nowrap bg-light">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+          <div class="p-2 border">Flex item 26</div>
+          <div class="p-2 border">Flex item 27</div>
+          <div class="p-2 border">Flex item 28</div>
+          <div class="p-2 border">Flex item 29</div>
+          <div class="p-2 border">Flex item 30</div>
+          <div class="p-2 border">Flex item 31</div>
+          <div class="p-2 border">Flex item 32</div>
+          <div class="p-2 border">Flex item 33</div>
+          <div class="p-2 border">Flex item 34</div>
+          <div class="p-2 border">Flex item 35</div>
+        </div>
+        <br />
+      </div>
+  
+      <div class="container mt-3">
+        <h2>Align Content</h2>
+        <p>
+          Control the vertical alignment of gathered flex items with the
+          .align-content-* classes.
+        </p>
+        <p>
+          <strong>Note:</strong> This example does not look good on a small
+          devices. Also note that these classes have no effect on single rows of
+          flex items.
+        </p>
+        <p>.align-content-start (default):</p>
+        <div
+          class="d-flex flex-wrap align-content-start bg-light"
+          style="height: 300px"
+        >
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p>.align-content-end:</p>
+        <div
+          class="d-flex flex-wrap align-content-end bg-light"
+          style="height: 300px"
+        >
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p>.align-content-center:</p>
+        <div
+          class="d-flex flex-wrap align-content-center bg-light"
+          style="height: 300px"
+        >
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p>.align-content-around:</p>
+        <div
+          class="d-flex flex-wrap align-content-around bg-light"
+          style="height: 300px"
+        >
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+        <p>.align-content-stretch:</p>
+        <div
+          class="d-flex flex-wrap align-content-stretch bg-light"
+          style="height: 300px"
+        >
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+          <div class="p-2 border">Flex item 4</div>
+          <div class="p-2 border">Flex item 5</div>
+          <div class="p-2 border">Flex item 6</div>
+          <div class="p-2 border">Flex item 7</div>
+          <div class="p-2 border">Flex item 8</div>
+          <div class="p-2 border">Flex item 9</div>
+          <div class="p-2 border">Flex item 10</div>
+          <div class="p-2 border">Flex item 11</div>
+          <div class="p-2 border">Flex item 12</div>
+          <div class="p-2 border">Flex item 13</div>
+          <div class="p-2 border">Flex item 14</div>
+          <div class="p-2 border">Flex item 15</div>
+          <div class="p-2 border">Flex item 16</div>
+          <div class="p-2 border">Flex item 17</div>
+          <div class="p-2 border">Flex item 18</div>
+          <div class="p-2 border">Flex item 19</div>
+          <div class="p-2 border">Flex item 20</div>
+          <div class="p-2 border">Flex item 21</div>
+          <div class="p-2 border">Flex item 22</div>
+          <div class="p-2 border">Flex item 23</div>
+          <div class="p-2 border">Flex item 24</div>
+          <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br />
+      </div>
+  
+      <div class="container mt-3">
+        <h2>Align Items</h2>
+        <p>
+          Control the vertical alignment of single rows of flex items with the
+          .align-content-* classes.
+        </p>
+        <p>.align-items-start:</p>
+        <div class="d-flex align-items-start bg-light" style="height: 150px">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br />
+        <p>.align-items-end:</p>
+        <div class="d-flex align-items-end bg-light" style="height: 150px">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br />
+        <p>.align-items-center:</p>
+        <div class="d-flex align-items-center bg-light" style="height: 150px">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br />
+        <p>.align-items-baseline:</p>
+        <div class="d-flex align-items-baseline bg-light" style="height: 150px">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br />
+        <p>.align-items-stretch (default):</p>
+        <div class="d-flex align-items-stretch bg-light" style="height: 150px">
+          <div class="p-2 border">Flex item 1</div>
+          <div class="p-2 border">Flex item 2</div>
+          <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br />
+      </div>
+  
+      <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border align-self-start">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+  
+      <div class="container mt-3">
+        <h2>Flex</h2>
+        <p>To create a flexbox container, add the d-flex class. Use any of the d-*-flex classes to control WHEN the element should be a flex element on a specific screen width.</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="d-flex bg-success">d-flex</div>
+        <span class="d-sm-flex bg-success">d-sm-flex</span>
+        <span class="d-md-flex bg-success">d-md-flex</span>
+        <span class="d-lg-flex bg-success">d-lg-flex</span>
+        <span class="d-xl-flex bg-success">d-xl-flex</span>
+        <span class="d-xxl-flex bg-success">d-xxl-flex</span>
+      </div>
+      
+
+      <!-- !formlar -->
+      <!-- !formlar -->
+      <!-- !formlar -->
+      <!-- !formlar -->
+      <!-- !formlar -->
+      <!-- !formlar -->
+      <!-- !formlar -->
+
+      <div class="container mt-3">
+        <h2>Stacked form</h2>
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <label for="email">Mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="maili gir" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Şifre:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="şifre gir" name="pswd">
+          </div>
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Beni hatırla
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Onayla</button>
+        </form>
+      </div>
+      
+      
+      <div class="container mt-3">
+        <h2>Textarea</h2>
+        <p>Use the .form-control class to style textareas as well:</p>
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div><br>
+      
+      <!-- !Satır içi form -->
+      <div class="container mt-3">
+        <h2>Inline Forms</h2>
+        <p>If you want your form elements to appear side by side, use .row and .col:</p>
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter email" name="email">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+            </div>
+          </div>
+        </form>
+      </div><br>
+      
+      <!-- !form boyutları -->
+      <div class="container mt-3">
+        <h2>Form Control Size</h2>
+        <p>You can change the size of .form-control inputs with .form-control-lg or .form-control-sm:</p>
+        <form>
+          <input type="text" class="form-control form-control-lg" placeholder="Large input">
+          <input type="text" class="form-control mt-3" placeholder="Normal input">
+          <input type="text" class="form-control form-control-sm mt-3" placeholder="Small input">
+        </form>
+      </div>
+      
+      
+      <div class="container mt-3">
+        <h2>Disabled and Readonly</h2>
+        <p>Use the disabled and/or readonly attributes to disable the input field:</p>
+        <form>
+          <input type="text" class="form-control" placeholder="Normal input">
+          <input type="text" class="form-control mt-3" placeholder="Disabled input" disabled>
+          <input type="text" class="form-control mt-3" placeholder="Readonly input" readonly>
+        </form>
+      </div>
+      
+      <!-- !düz Metin için -->
+      
+      <div class="container mt-3">
+        <h2>Plaintext</h2>
+        <p>Use the .form-control-plaintext class to style an input field without borders, but with correct marigins and padding:</p>
+        <form>
+          <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+          <input type="text" class="form-control mt-3" placeholder="Normal input">
+        </form>
+      </div>
+      
+      
+      <!-- !renk seçici -->
+      <div class="container mt-3">
+        <h2>Color Picker</h2>
+        <p>To style an input with type="color" properly, use the .form-control-color class:</p>
+        <form>
+          <label for="myColor" class="form-label">Color picker</label>
+          <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
+        </form>
+      </div>
+
+      
+      <!-- *seçilebilir menüler -->
+  <!-- !seçilebilir menü -->
+  <div class="container mt-3">
+    <h2>Select Menu</h2>
+    <p>
+      To style a select menu in Bootstrap 5, add the .form-select class to the
+      select element:
+    </p>
+    <form action="/action_page.php">
+      <label for="sel1" class="form-label">Select list (select one):</label>
+      <select class="form-select" id="sel1" name="sellist1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br />
+      <!-- !seçilebilir liste -->
+
+      <label for="sel2" class="form-label"
+        >Mutiple select list (hold shift to select more than one):</label
+      >
+      <select multiple class="form-select" id="sel2" name="sellist2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  </div>
+
+  <!-- !büyüklük -->
+
+  <div class="container mt-3">
+    <h2>Select Menu Size</h2>
+    <p>
+      Use the .form-select-lg or .form-select-sm class to change the size of
+      the select menu:
+    </p>
+    <form>
+      <select class="form-select form-select-lg">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <select class="form-select mt-3">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <select class="form-select form-select-sm mt-3" disabled>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </form>
+  </div>
+
+
+<div class="container mt-3">
+<h2>Data List</h2>
+<form action="/action_page.php">
+  <label for="browser" class="form-label">Choose your browser from the list:</label>
+  <input class="form-control" list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>    
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+</div>
+
+
+<!-- *seçim araçları ile form -->
+
+        <!-- !seçenek elemanlrı -->
+        <div class="container mt-3">
+            <h2>Checkboxes</h2>
+            <p>To style a checkbox, use a container element with a .form-check class, and add .form-check-label to labels, and .form-check-input to the input with type="checkbox".</p>
+            <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+            <form action="/action_page.php">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                <label class="form-check-label" for="check1">Option 1</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Option 2</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Option 3</label>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+          </div>
+          
+          
+          <div class="d-sm-flex m-3">
+            <!-- !tek seçenekli butonlar -->
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+              <label class="form-check-label" for="radio1"></label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+              <label class="form-check-label" for="radio2"></label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" disabled>Option 3
+              <label class="form-check-label"></label>
+            </div>
+            <!-- !geçiş anahtarı -->
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+              <label class="form-check-label" for="mySwitch">Dark Mode</label>
+            </div>
+          </div>
+
+          <!-- *aralık çubuğu -->
+          <div class="container m-3">
+            <label for="customRange" class="form-label">Custom range</label>
+            <input type="range" class="form-range" id="customRange"> 
+            <h3>aralıklı</h3>
+            <!-- !belli bir aralığa göre  -->
+            <input type="range" class="form-range" step="10"> 
+            <!-- !aralıklı aralık aracı -->
+            <h3>en çok 4 en az 0 alır</h3>
+            <input type="range" class="form-range" min="0" max="4"> 
+          </div>
+
+          <!-- *giriş gurupları -->
+          <div class="container mt-3">
+            <h2>Input Group</h2>
+            <p>
+              The .input-group class is a container to enhance an input by adding an
+              icon, text or a button in front or behind the input field as a "help
+              text".
+            </p>
+            <p>Use the .input-group-text class to style the specified help text.</p>
+      
+            <form action="/action_page.php">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  name="usrname"
+                />
+              </div>
+      
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email"
+                  name="email"
+                />
+                <span class="input-group-text">@example.com</span>
+              </div>
+      
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <!-- !boyut için -->
+          <h3>boyut ayarlaması için</h3>
+          <div class="input-group mb-3 input-group-sm">
+            <span class="input-group-text">Small</span>
+            <input type="text" class="form-control" />
+          </div>
+      
+          <div class="input-group mb-3">
+            <span class="input-group-text">Default</span>
+            <input type="text" class="form-control" />>
+          </div>
+      
+          <div class="input-group mb-3 input-group-lg">
+            <span class="input-group-text">Large</span>
+            <input type="text" class="form-control" />
+          </div>
+      
+          <!-- !çoklu girişler için -->
+          <!-- Multiple inputs -->
+          <h3>Çoklu girişler için</h3>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Person</span>
+        <input type="text" class="form-control" placeholder="First Name">
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>
+      
+      <!-- Multiple addons / help text -->
+      <div class="input-group mb-3">
+        <span class="input-group-text">One</span>
+        <span class="input-group-text">Two</span>
+        <span class="input-group-text">Three</span>
+        <input type="text" class="form-control">
+      </div>
+      
+      <!-- !seçim elamanlrıyla -->
+      <h3>seçim elemanlı</h3>
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input type="checkbox">
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input type="radio">
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+      
+      <!-- !butonlu -->
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-primary" type="button">Basic Button</button>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search">
+        <button class="btn btn-success" type="submit">Go</button>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Something clever..">
+        <button class="btn btn-primary" type="button">OK</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+      </div>
+      
+      
+      <!-- !açılır liste ile -->
+      <h3>açılır liste ile</h3>
+      <div class="input-group mt-3 mb-3">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+
+      <!-- *ek giriş seçenekleri -->
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+        <label for="email">Email</label>
+      </div>
+      
+      <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        <label for="pwd">Password</label>
+      </div> 
+
+      <!-- !büyüyebilen -->
+
+      <div class="form-floating">
+        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+        <label for="comment">Comments</label>
+      </div><br>
+
+      <!-- !başlıklı açılır liste -->
+      <h3>başlıklı açılır liste</h3>
+      <div class="form-floating">
+        <select class="form-select" id="sel1" name="sellist">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <label for="sel1" class="form-label">Select list (select one):</label>
+      </div>
+
+      <!-- *montrollü giriş -->
+      <form action="/action_page.php" class="was-validated">
+        <div class="mb-3 mt-3">
+          <label for="uname" class="form-label">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+          <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+
+      <!-- !düzen -->
+      <!-- !düzen -->
+      <!-- !düzen -->
+      <!-- !düzen -->
+      <!-- !düzen -->
+
+        <!-- !row satır -->
+        <div class="container-fluid mt-3">
+            <h1>Basic Grid Structure</h1>
+            <p>Resize the browser window to see the effect.</p>
+            <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+            
+            <!-- Control the column width, and how they should appear on different devices -->
+            <div class="row">
+              <div class="col-6 bg-primary text-white">50%</div>
+              <div class="col-6 bg-dark text-white">50%</div>
+            </div>
+            <br>
+              
+            <div class="row">
+              <div class="col-sm-4 bg-primary text-white">33.33%</div>
+              <div class="col-sm-4 bg-dark text-white">33.33%</div>
+              <div class="col-sm-4 bg-primary text-white">33.33%</div>
+            </div>
+            <br>
+          
+            <!-- Or let Bootstrap automatically handle the layout -->
+            <div class="row">
+              <div class="col-sm bg-primary text-white">25%</div>
+              <div class="col-sm bg-dark text-white">25%</div>
+              <div class="col-sm bg-primary text-white">25%</div>
+              <div class="col-sm bg-dark text-white">25%</div>
+            </div>
+            <br>
+              
+            <div class="row">
+              <div class="col bg-primary text-white">25%</div>
+              <div class="col bg-dark text-white">25%</div>
+              <div class="col bg-primary text-white">25%</div>
+              <div class="col bg-dark text-white">25%</div>
+            </div>
+          </div>
+          
+                  <!-- !container kutu -->
+          
+                  <div class="container-fluid mt-3">
+                    <h1>Grid Example</h1>
+                    <p>This example demonstrates a 50%/50% split on small, medium, large, xlarge and xxlarge devices. On extra small devices, it will stack (100% width).</p>      
+                    <p>Resize the browser window to see the effect.</p> 
+                    <div class="row">
+                      <div class="col-sm-6 bg-primary text-white p-3">
+                        Lorem ipsum...
+                      </div>
+                      <div class="col-sm-6 bg-dark text-white p-3">
+                        Sed ut perspiciatis...
+                      </div>
+                    </div>
+                  </div>
+                  
+    </body>
+    </html>
+
+
