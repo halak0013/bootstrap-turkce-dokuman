@@ -92,14 +92,74 @@
     <div class="container mt-3">
       <h1>Height Utilities</h1>
       <p>Set the height of an element with the w-* classes:</p>
-      <div style="height:200px;background-color:#ddd">
+      <div style=" height: 200px; background-color: #ddd">
         <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
         <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
         <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
         <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
         <div class="h-auto d-inline-block p-2 bg-warning">Auto Height</div>
-        <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+        <div class="mh-100 d-inline-block p-2 bg-warning" style="height: 400px">
+          Max Height 100%
+        </div>
       </div>
+    </div><br><br><br><br><br><br><br>
+    <!-- !pading içe doğru boşluk eklemek için-->
+    <div class="pt-4 mt-5 bg-warning">I only have a top padding (1.5rem)</div>
+    <div class="p-5 bg-success">I have a padding on all sides (3rem)</div>
+    <!-- !margin ise dışa doğru boşluk eklmek için -->
+    <div class="m-5 pb-5 bg-info">
+      I have a margin on all sides (3rem) and a bottom padding (3rem)
     </div>
-  </body>
+
+    <!-- !gölgeleme yapmak için -->
+    <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+<div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+<div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+<div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+
+<!-- !hizalama aling ile ayarlanıyor  -->
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+
+
+<div class="container mt-3">
+  <h2>Aspect Ratio</h2>
+  <p>Create a responsive video and scale it nicely to the parent element.</p>
+  
+  <h2>Aspect ratio 1:1</h2>
+  <div class="ratio ratio-1x1">
+    <iframe src="https://www.youtube.com/embed/-2PCPx7ZISE"></iframe>
+  </div>
+  <br>
+  
+  <h2>Aspect ratio 4:3</h2>
+  <div class="ratio ratio-4x3">
+    <iframe src="https://www.youtube.com/embed/-2PCPx7ZISE"></iframe>
+  </div> 
+  <br>
+  
+  <h2>Aspect ratio 16:9</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/-2PCPx7ZISE"></iframe>
+  </div>
+  <br>
+    
+  <h2>Aspect ratio 21:9</h2>
+  <div class="ratio ratio-21x9">
+    <iframe src="https://www.youtube.com/embed/-2PCPx7ZISE"></iframe>
+  </div>
+</div>
+<div class="visible">I am visible</div>
+<div class="invisible">I am invisible</div><p>gizli</p>
+
+<!-- !kapatma butonu -->
+<button type="button" class="btn-close"></button>
+<!-- ! okuma ekranı hariç tüm ekranlarda gizleniyor -->
+<span class="visually-hidden">I will be hidden on all screens except for screen readers.</span>   
+</body>
+
 </html>
